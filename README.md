@@ -18,7 +18,7 @@ Note: This is a fictional data set created by IBM data scientists.***
 
 **The solution is divided into the 5 sections:**
   - Data understanding and cleaning.
-  - Data exploration and visualisation.
+  - Data exploration through visualisation.
   - Feature Engineering and Modelling.
   - Model Evaluation.
   - Model deployment.
