@@ -16,11 +16,10 @@ Note: This is a fictional data set created by IBM data scientists.***
 ## :hash:**Things to do**:grey_question:
 ***The job is to understand the factors on which the attrition of an employee depends and making a model to predict  attrition of their valuable employees.***
 
-**The solution is divided into the 5 sections:**
+**The solution is divided into the 4 sections:**
   - Data understanding and cleaning.
   - Data exploration through visualisation.
   - Feature Engineering and Modelling.
-  - Model Evaluation.
   - Model deployment.
 
 This data set is downloaded from [www.kaggle.com](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
