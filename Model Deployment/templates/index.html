@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attrition Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Attrition Prediction</h1>
+        <form id="attritionForm">
+            <label for="Age">Age</label>
+            <input type="number" id="Age" name="Age" required>
+
+            <label for="BusinessTravel">Business Travel</label>
+            <select id="BusinessTravel" name="BusinessTravel" required>
+                <option value="Non-Travel">Non-Travel</option>
+                <option value="Travel_Frequently">Travel Frequently</option>
+                <option value="Travel_Rarely">Travel Rarely</option>
+            </select>
+
+            <label for="DailyRate">Daily Rate</label>
+            <input type="number" id="DailyRate" name="DailyRate" required>
+
+            <label for="Department">Department</label>
+            <select id="Department" name="Department" required>
+                <option value="Human Resources">Human Resources</option>
+                <option value="Research & Development">Research & Development</option>
+                <option value="Sales">Sales</option>
+            </select>
+
+            <label for="DistanceFromHome">Distance From Home</label>
+            <input type="number" id="DistanceFromHome" name="DistanceFromHome" required>
+
+            <label for="Education">Education</label>
+            <select id="Education" name="Education" required>
+                <option value="Bachelors">Bachelors</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Masters">Masters</option>
+                <option value="PhD">PhD</option>
+                <option value="Schooling">Schooling</option>
+            </select>
+
+            <label for="EducationField">Education Field</label>
+            <select id="EducationField" name="EducationField" required>
+                <option value="Human Resources">Human Resources</option>
+                <option value="Life Sciences">Life Sciences</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Medical">Medical</option>
+                <option value="Other">Other</option>
+                <option value="Technical Degree">Technical Degree</option>
+            </select>
+
+            <label for="EnvironmentSatisfaction">Environment Satisfaction</label>
+            <select id="EnvironmentSatisfaction" name="EnvironmentSatisfaction" required>
+                <option value="High">High</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="Very high">Very high</option>
+            </select>
+
+            <label for="Gender">Gender</label>
+            <select id="Gender" name="Gender" required>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+            </select>
+
+            <label for="HourlyRate">Hourly Rate</label>
+            <input type="number" id="HourlyRate" name="HourlyRate" required>
+
+            <label for="JobInvolvement">Job Involvement</label>
+            <select id="JobInvolvement" name="JobInvolvement" required>
+                <option value="High">High</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="Very high">Very high</option>
+            </select>
+
+            <label for="JobLevel">Job Level</label>
+            <select id="JobLevel" name="JobLevel" required>
+                <option value="Fresher">Fresher</option>
+                <option value="Junior">Junior</option>
+                <option value="Manager">Manager</option>
+                <option value="Senior">Senior</option>
+                <option value="Team Lead">Team Lead</option>
+            </select>
+
+            <label for="JobRole">Job Role</label>
+            <select id="JobRole" name="JobRole" required>
+                <option value="Healthcare Representative">Healthcare Representative</option>
+                <option value="Human Resources">Human Resources</option>
+                <option value="Laboratory Technician">Laboratory Technician</option>
+                <option value="Manager">Manager</option>
+                <option value="Manufacturing Director">Manufacturing Director</option>
+                <option value="Research Director">Research Director</option>
+                <option value="Research Scientist">Research Scientist</option>
+                <option value="Sales Executive">Sales Executive</option>
+                <option value="Sales Representative">Sales Representative</option>
+            </select>
+
+            <label for="JobSatisfaction">Job Satisfaction</label>
+            <select id="JobSatisfaction" name="JobSatisfaction" required>
+                <option value="High">High</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="Very high">Very high</option>
+            </select>
+
+            <label for="MaritalStatus">Marital Status</label>
+            <select id="MaritalStatus" name="MaritalStatus" required>
+                <option value="Divorced">Divorced</option>
+                <option value="Married">Married</option>
+                <option value="Single">Single</option>
+            </select>
+
+            <label for="MonthlyIncome">Monthly Income</label>
+            <input type="number" id="MonthlyIncome" name="MonthlyIncome" required>
+
+            <label for="MonthlyRate">Monthly Rate</label>
+            <input type="number" id="MonthlyRate" name="MonthlyRate" required>
+
+            <label for="NumCompaniesWorked">Number of Companies Worked</label>
+            <input type="number" id="NumCompaniesWorked" name="NumCompaniesWorked" required>
+
+            <label for="OverTime">Overtime</label>
+            <select id="OverTime" name="OverTime" required>
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+
+            <label for="PercentSalaryHike">Percent Salary Hike</label>
+            <input type="number" id="PercentSalaryHike" name="PercentSalaryHike" required>
+
+            <label for="PerformanceRating">Performance Rating</label>
+            <select id="PerformanceRating" name="PerformanceRating" required>
+                <option value="Excellent">Excellent</option>
+                <option value="Outstanding">Outstanding</option>
+            </select>
+
+            <label for="RelationshipSatisfaction">Relationship Satisfaction</label>
+            <select id="RelationshipSatisfaction" name="RelationshipSatisfaction" required>
+                <option value="Excellent">Excellent</option>
+                <option value="Good">Good</option>
+                <option value="Outstanding">Outstanding</option>
+                <option value="Poor">Poor</option>
+            </select>
+
+            <label for="StockOptionLevel">Stock Option Level</label>
+            <input type="number" id="StockOptionLevel" name="StockOptionLevel" required>
+
+            <label for="TotalWorkingYears">Total Working Years</label>
+            <input type="number" id="TotalWorkingYears" name="TotalWorkingYears" required>
+
+            <label for="TrainingTimesLastYear">Training Times Last Year</label>
+            <input type="number" id="TrainingTimesLastYear" name="TrainingTimesLastYear" required>
+
+            <label for="WorkLifeBalance">Work Life Balance</label>
+            <select id="WorkLifeBalance" name="WorkLifeBalance" required>
+                <option value="Best">Best</option>
+                <option value="Better">Better</option>
+                <option value="Good">Good</option>
+                <option value="Poor">Poor</option>
+            </select>
+
+            <label for="YearsAtCompany">Years At Company</label>
+            <input type="number" id="YearsAtCompany" name="YearsAtCompany" required>
+
+            <label for="YearsInCurrentRole">Years In Current Role</label>
+            <input type="number" id="YearsInCurrentRole" name="YearsInCurrentRole" required>
+
+            <label for="YearsSinceLastPromotion">Years Since Last Promotion</label>
+            <input type="number" id="YearsSinceLastPromotion" name="YearsSinceLastPromotion" required>
+
+            <label for="YearsWithCurrManager">Years With Current Manager</label>
+            <input type="number" id="YearsWithCurrManager" name="YearsWithCurrManager" required>
+
+            <button type="submit">Predict Attrition</button>
+        </form>
+        <div id="result">
+            <p id="predictionResult"></p>
+            <p id="predictionProba"></p>
+        </div>        
+    </div>
+    <script src="{{ url_for('static', filename='Script.js') }}"></script>
+</body>
+</html>
