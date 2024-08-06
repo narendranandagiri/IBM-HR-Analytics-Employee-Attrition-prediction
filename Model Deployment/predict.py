@@ -5,7 +5,7 @@ from flask import jsonify
 
 def predict_response(input_features):
     try:
-        with open("training_features.json", "r") as file:
+        with open("../Artifacts/training_features.json", "r") as file:
             features = json.load(file)['features']
         model = pickle.load(open('model.pkl', 'rb'))
         scaling = pickle.load(open('scaling.pkl', 'rb'))
