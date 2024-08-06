@@ -5,8 +5,8 @@ from predict import predict_response
 app = Flask(__name__)
 
 # Loading the model and scaler
-model = pickle.load(open('model.pkl', 'rb'))
-scaling = pickle.load(open('scaling.pkl', 'rb'))
+model = pickle.load(open('../Artifacts/model.pkl', 'rb'))
+scaling = pickle.load(open('../Artifacts/scaling.pkl', 'rb'))
 
 @app.route('/')
 def index():
